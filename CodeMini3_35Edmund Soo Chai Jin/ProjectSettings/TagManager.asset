@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ground
   - Cone
+  - Crate
+  - PowerUp
+  - Goal
   layers:
   - Default
   - TransparentFX
