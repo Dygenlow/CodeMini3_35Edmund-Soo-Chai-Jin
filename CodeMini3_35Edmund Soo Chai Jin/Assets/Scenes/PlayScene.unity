@@ -1169,7 +1169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1468,7 +1468,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -182, y: 158.9}
+  m_AnchoredPosition: {x: -212, y: 170}
   m_SizeDelta: {x: 320, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1393440546
@@ -1571,6 +1571,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 29b6b360451dc2e45a71dc580c429836, type: 2}
+    - target: {fileID: 13700002, guid: 2dc7b382d25903545b405802eb2198ab, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dc7b382d25903545b405802eb2198ab, type: 3}
 --- !u!1001 &1627642852
@@ -1634,6 +1638,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3707c9ff6cd955e49ad7b50d6841c523, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dca5595cdaced544b3bca78ca84e8d8, type: 3}
+--- !u!1 &1629473900 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100014, guid: 2dc7b382d25903545b405802eb2198ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 1517570480}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1669758504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,7 +1865,11 @@ MonoBehaviour:
   playerAnim: {fileID: 1104723739}
   bridge: {fileID: 2122799873}
   platform: {fileID: 695658006}
+  child: {fileID: 1629473900}
   timer: {fileID: 1393440546}
+  playerMaterials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d17452e5aed15684e8d6eb5761f3a3ef, type: 2}
 --- !u!1 &1948977894
 GameObject:
   m_ObjectHideFlags: 0

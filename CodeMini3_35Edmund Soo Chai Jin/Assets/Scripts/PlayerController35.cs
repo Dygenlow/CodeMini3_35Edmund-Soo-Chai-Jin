@@ -27,11 +27,14 @@ public class PlayerController35 : MonoBehaviour
     public Animator playerAnim;
     public GameObject bridge;
     public GameObject platform;
+    public GameObject child;
     public Text timer;
+    public Material[] playerMaterials;
 
     float gravityModifier = 2.5f;
 
     Rigidbody playerRb;
+    Renderer playerRdr;
     
     // Start is called before the first frame update
     void Start()
@@ -39,6 +42,7 @@ public class PlayerController35 : MonoBehaviour
         Physics.gravity *= gravityModifier;
 
         playerRb = GetComponent<Rigidbody>();
+        playerRdr = child.GetComponent<SkinnedMeshRenderer>();
     }
 
     // Update is called once per frame
@@ -74,6 +78,8 @@ public class PlayerController35 : MonoBehaviour
         if(collision.gameObject.CompareTag("Ground"))
         {
             onGround = true;
+
+            playerRdr.material.color = playerMaterials[0].color;
         }
     }
 
@@ -228,6 +234,8 @@ public class PlayerController35 : MonoBehaviour
             playerAnim.SetTrigger("isJump");
 
             onGround = false;
+
+            playerRdr.material.color = playerMaterials[1].color;
         }
     }
 }
